@@ -1,0 +1,9 @@
+diff a/css/style.css b/css/style.css	(rejected hunks)
+@@ -19,7 +19,6 @@
+     .nav-pills .nav-link.active {
+         color: #fff;
+         background-color: #1abc9a !important;
+-        background-size: contain !important;
+     }
+     
+     a:hover {

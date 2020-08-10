@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a class="btn btn-lg btn-outline btn-rounded waves-effect" href="https://www.facebook.com/"><i class="fa fa-download" aria-hidden="true"></i>
+                <a class="btn btn-xl btn-outline btn-rounded" href="https://www.facebook.com/"><i class="fa fa-download" aria-hidden="true"></i>
                     Free Download!</a>
             </div>
         </div>
@@ -178,7 +178,7 @@
                 <div class="md-form input-group input-group-lg mb-3">
                     <textarea class=" md-textarea form-control" id="validationDefault04" rows="5" placeholder="Message" required></textarea>
                 </div>
-                <button class="buttonClose " type="submit">Send</button>
+                <button class="buttonSend" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -194,10 +194,10 @@
                 </div>
                 <div class="col-lg-4 mb-lg-0">
                     <h4 class="mb-4 text-uppercase ">Around The Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" type="button" role="button"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" type="button" role="button"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" type="button" role="button"><i class="fa fa-linkedin"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" type="button" role="button"><i class="fa fa-dribbble"></i></a>
+                    <a class="btn btn-outline-light  mx-1" type="button" role="button"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-outline-light  mx-1" type="button" role="button"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-outline-light  mx-1" type="button" role="button"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-outline-light  mx-1" type="button" role="button"><i class="fa fa-dribbble"></i></a>
                 </div>
                 <div class="col-lg-4">
                     <h4 class="text-uppercase mb-4">About Freelancer</h4>
@@ -217,197 +217,227 @@
     <button onclick="topFunction1()" id="myBtn" title="Go to top">
         <i class="fas fa-angle-up"></i>
     </button>
-    <div class="container">
-        <div class="modal fade" id="modalPush" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                            <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Log Cabin</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+    <div class="modal fade" id="modalPush" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Log Cabin</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/cabin.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/cabin.png">
-                        <p class="mb-5" style="font-family: 'Times New Roman', Times, serif;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose" data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose" data-dismiss="modal"><i class="fa fa-times fw" aria-hidden="true"></i> Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
-        <!--Modal: modalPush-->
-        <div class=" modal fade" id="modalPushCake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    </div>
+
+    <!--Modal: modalPush-->
+    <div class=" modal fade" id="modalPushCake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
                             <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
                         </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Tasty Cake</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Tasty Cake</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/cake.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/cake.png">
-                        <p class="mb-5" style="font-family: 'Times New Roman', Times, serif;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose" data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose" data-dismiss="modal"><i class="fa fa-times fa-fw" aria-hidden="true"></i>  Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
-        <!--Modal: modalPush-->
-        <div class=" modal fade" id="modalPushCircus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    </div>
+    <!--Modal: modalPush-->
+    <div class=" modal fade" id="modalPushCircus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
                             <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
                         </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Circus Tent</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Circus Tent</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/circus.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/circus.png">
-                        <p class="mb-5" style="font-family: 'Times New Roman', Times, serif;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose" data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose" data-dismiss="modal"><i class="fa fa-times fa-fw" aria-hidden="true"></i> Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
-        <!--Modal: modalPush-->
-        <div class=" modal fade" id="modalPushGame" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    </div>
+    <!--Modal: modalPush-->
+    <div class=" modal fade" id="modalPushGame" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
                         <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
                     </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Controller</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Controller</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/game.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/game.png">
-                        <p class="mb-5" style="font-family: 'Times New Roman', Times, serif;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose" data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose" data-dismiss="modal"><i class="fa fa-times fa-fw" aria-hidden="true"></i> Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
-        <!--Modal: modalPush-->
-        <div class=" modal fade" id="modalPushSafe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    </div>
+    <!--Modal: modalPush-->
+    <div class=" modal fade" id="modalPushSafe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
                             <span aria-hidden="true" class="colorText"><i class="fas fa-times"></i></span>
                         </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Locked Safe</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Lock Safe</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/safe.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/safe.png">
-                        <p class="mb-5" style="font-family: 'Times New Roman', Times, serif;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose" data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose" data-dismiss="modal"><i class="fa fa-times fa-fw" aria-hidden="true"></i> Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
-        <!--Modal: modalPush-->
-        <div class=" modal fade" id="modalPushSubMarine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-                <!--Content-->
-                <div class="modal-content jf">
-                    <!--Header-->
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    </div>
+    <!--Modal: modalPush-->
+    <div class=" modal fade" id="modalPushSubMarine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content ">
+                <!--Header-->
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
                             <span aria-hidden="true" class="colorText" ><i class="fas fa-times"></i></span>
                         </button>
-                    </div>
-                    <div class="modal-body">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Submarine</h2>
-                        <div id="intro1">
-                            <div style="display: inline-block;" id="bf1">
-                                <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <!--col-lg-8: lấy 2/3 giá trị-->
+                        <div class="col-lg-8">
+                            <h2 class=" text-center text-uppercase text-secondary mb-0">Submarine</h2>
+                            <div id="intro1">
+                                <div style="display: inline-block;" id="bf1">
+                                    <i class="fa fa-star fa-10x" aria-hidden="true" id="star"></i>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="img/submarine.png">
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="img/submarine.png">
-                        <p class="mb-0">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                        </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="buttonClose " data-dismiss="modal">Close Window</button>
                     </div>
                 </div>
-                <!--/.Content-->
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="buttonClose " data-dismiss="modal"><i class="fa fa-times fa-fw" aria-hidden="true"></i> Close Window</button>
+                </div>
             </div>
+            <!--/.Content-->
         </div>
+
     </div>
     <script>
         window.onscroll = function() {
