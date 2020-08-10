@@ -57,6 +57,10 @@
         color: whitesmoke;
     }
     
+    section .page-section-heading {
+        font-size: 2.5rem;
+    }
+    
     #btnMenu {
         background-color: #1abc9c;
         border: none;
@@ -234,6 +238,7 @@
     .btn.btn-outline {
         color: white;
         border-color: white;
+        text-transform: none;
     }
     
     .bg-secondary {
@@ -241,13 +246,12 @@
     }
     
     section {
-        padding-top: 90px;
-        padding-bottom: 6rem;
+        padding: 6rem 0;
     }
     
     .btn.btn-outline:hover {
-        color: black;
-        border-color: black;
+        color: black !important;
+        background-color: white;
     }
     
     .modal-footer {
