@@ -24,6 +24,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -166,26 +169,26 @@
                     <i class="fa fa-star fa-10x" aria-hidden="true"></i>
                 </div>
             </div>
-            <form class="needs-validation was-validated" id="contactForm">
+            <form class="needs-validation" novalidate id="contactForm">
                 <div class="md-form input-group input-group-lg mb-3">
-                    <input type="text" class="form-control" id="validationName" placeholder="YourName">
-                    <div class="valid-feedback" style="font-size: 14px;"></div>
-                    <div class="invalid-feedback" style="font-size: 14px;">Please enter your name</div>
+                    <input type="text" class="form-control" id="validationName" placeholder="YourName" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter your name</div>
                 </div>
                 <div class="md-form input-group input-group-lg mb-3">
-                    <input type="email" class="form-control" id="validationEmail" placeholder="Email Address">
-                    <div class="valid-feedback" style="font-size: 14px;"></div>
-                    <div class="invalid-feedback" style="font-size: 14px;">Please enter your email</div>
+                    <input type="email" class="form-control" id="validationEmail" placeholder="Email Address" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter your email</div>
                 </div>
                 <div class="md-form input-group input-group-lg mb-3">
-                    <input type="text" class="form-control" id="validationPhone" placeholder="Phone Number">
-                    <div class="valid-feedback" style="font-size: 14px;"></div>
-                    <div class="invalid-feedback" style="font-size: 14px;">Please enter your phone</div>
+                    <input type="text" class="form-control" id="validationPhone" placeholder="Phone Number" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter your phone</div>
                 </div>
                 <div class="md-form input-group input-group-lg mb-3">
-                    <textarea class=" md-textarea form-control" id="validationMessage" rows="5" placeholder="Message"></textarea>
-                    <div class="valid-feedback" style="font-size: 14px;"></div>
-                    <div class="invalid-feedback" style="font-size: 14px;">Please enter your message</div>
+                    <textarea class=" md-textarea form-control" id="validationMessage" rows="5" placeholder="Message" required></textarea>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please enter your message</div>
                 </div>
                 <button class="buttonSend" type="submit">Send</button>
             </form>
@@ -467,10 +470,27 @@
             $("a").click(function() {
                 $("#demo").hide(200);
             });
-            $("#btnMenu").click(function() {
-                $("#demo").toggle(200);
+            $("#btnMenu").lclick(function() {
+                $("#demo").show(200);
             });
         });
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 
