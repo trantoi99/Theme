@@ -29,7 +29,7 @@ $(document).on("click", function() {
     $("a").click(function() {
         $("#demo").hide(200);
     });
-    $("#btnMenu").lclick(function() {
+    $("#btnMenu").click(function() {
         $("#demo").show(200);
     });
 });
