@@ -11,3 +11,42 @@ $(document).on("scroll", function() {
         mybutton.style.display = "none";
     }
 });
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    var nav = document.getElementById("mainNav");
+
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 80) {
+        nav.classList.replace("large", "small");
+    } else {
+        nav.classList.replace("small", "large");
+    }
+}
+$(document).on("click", function() {
+
+    $("a").click(function() {
+        $("#demo").hide(200);
+    });
+    $("#btnMenu").lclick(function() {
+        $("#demo").show(200);
+    });
+});
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
