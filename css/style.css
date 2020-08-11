@@ -39,7 +39,6 @@ section {
 }
 
 #mainNav {
-    padding-bottom: 1.5rem;
     font-weight: 700;
     transition: all 0.7s ease-in-out;
 }
@@ -119,7 +118,6 @@ img {
     position: relative;
     font-size: 40px;
     text-align: center;
-    margin: 1.25rem 0 1.5rem;
 }
 
 .line::before {
@@ -152,7 +150,6 @@ img {
     position: relative;
     font-size: 40px;
     text-align: center;
-    margin: 1.25rem 0 1.5rem;
 }
 
 .lineBlue::before {
@@ -178,12 +175,12 @@ img {
 }
 
 .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
 }
 
 #intro1 .fa.fa-star {
@@ -303,7 +300,6 @@ section {
     cursor: pointer;
     padding: 15px;
     opacity: 0.3;
-    border-radius: 50%;
 }
 
 #myBtn:hover {
@@ -396,26 +392,26 @@ form {
 }
 
 .large {
-    padding-top: 20px;
-    padding-bottom: 20px !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .large #logo {
-    font-size: 32px;
+    font-size: 1.4rem;
 }
 
 .small {
-    padding-top: 10px;
-    padding-bottom: 10px !important;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
 }
 
 .small #logo {
-    font-size: 28px;
+    font-size: 1.2rem;
 }
 
 .large ul,
 .small ul {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .invalid-feedback {
