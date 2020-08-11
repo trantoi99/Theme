@@ -422,6 +422,6 @@ form {
     font-size: 14px;
 }
 
-.lead {
-    font-weight: 450;
+p.thick {
+    font-weight: 400;
 }
