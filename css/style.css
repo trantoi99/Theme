@@ -239,7 +239,7 @@ img {
 }
 
 .imghover:hover .middle {
-    opacity: 0.3;
+    opacity: 0.55;
     background-color: #1abc9c;
 }
 
