@@ -33,7 +33,7 @@ $(document).on("click", function() {
         $("#demo").collapse('toggle');
     });
     $("body").click(function() {
-        $("#demo").collapse('toggle');
+        $("#demo").collapse('hide');
     });
 
 });
