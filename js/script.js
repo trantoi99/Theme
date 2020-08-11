@@ -26,12 +26,16 @@ function scrollFunction() {
 }
 $(document).on("click", function() {
 
-    $("a").click(function() {
-        $("#demo").hide(200);
-    });
     $("#btnMenu").click(function() {
-        $("#demo").show(200);
+        $("#demo").collapse('toggle');
     });
+    $("a").click(function() {
+        $("#demo").collapse('toggle');
+    });
+    $("body").click(function() {
+        $("#demo").collapse('toggle');
+    });
+
 });
 (function() {
     'use strict';
