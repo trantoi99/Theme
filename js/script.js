@@ -29,7 +29,7 @@ $(document).on("click", function() {
     $("#btnMenu").click(function() {
         $("#demo").collapse('toggle');
     });
-    $("a").click(function() {
+    $(".nav a").click(function() {
         $("#demo").collapse('toggle');
     });
     $("body").click(function() {
